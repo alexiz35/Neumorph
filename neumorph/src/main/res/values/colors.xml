@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="background_dark">#171616FF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black_dark_overlay">#CC000000</color>
+    <color name="main_blue">#3D3AE0</color>
+    <color name="background_black">#000000</color>
+    <color name="dark_blue">#0B0B3B</color>
+    <color name="bright_blue">#1A1AFF</color>
+    <color name="alert_red">#FF0000</color>
+    <color name="warning_yellow">#FFCC00</color>
+    <color name="pure_white">#FFFFFF</color>
+    <color name="gradient_dark_blue_start">#0D0D59</color>
+    <color name="gradient_dark_blue_end">#262680</color>
+    <color name="dark_gray">#333333</color>
+    <color name="status_green">#00FF00</color> <!-- Яркий зелёный для положительных статусов -->
+    <color name="status_green_dark">#00CC00</color> <!-- Приглушенный зелёный для неярких индикаторов -->
+    <color name="transparent">#00FFFFFF</color> <!-- Приглушенный зелёный для неярких индикаторов -->
+</resources>

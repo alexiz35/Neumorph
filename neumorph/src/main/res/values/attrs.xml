@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NeumorphCardView">
+        <attr name="neu_backgroundColor" format="color" />
+        <attr name="neu_cornerRadius" format="dimension" />
+        <attr name="neu_shadowRadius" format="dimension" />
+        <attr name="neu_shadowOffset" format="dimension" />
+        <attr name="neu_pressed" format="boolean" />
+        <attr name="neu_lightShadowColor" format="color" />
+        <attr name="neu_darkShadowColor" format="color" />
+        <attr name="neu_switchStyle" format="boolean" />
+        <attr name="neu_pressable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NeumorphButton">
+        <attr name="neu_innerPadding" format="dimension" />
+
+        <attr name="neu_ButtonText" format="string" />
+        <attr name="neu_primaryColorText" format="color"/>
+        <attr name="neu_secondaryColorText" format="color"/>
+        <attr name="neu_sizeText" format="dimension" />
+
+        <attr name="neu_ButtonIcon" format="reference" />
+        <attr name="neu_SecondaryButtonIcon" format="reference" />
+        <attr name="neu_primaryColorIcon" format="color"/>
+        <attr name="neu_secondaryColorIcon" format="color"/>
+        <attr name="neu_sizeIcon" format="dimension" />
+
+    </declare-styleable>
+</resources>
