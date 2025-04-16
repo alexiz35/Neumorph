@@ -47,7 +47,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.github.aleksiz35"
             artifactId = "neumorph"
-            version = "1.0.0"
+            version = "1.0.1"
 
             afterEvaluate {
                 val releaseComponent = components.findByName("release")
