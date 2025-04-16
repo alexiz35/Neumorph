@@ -2,3 +2,8 @@
 plugins {
     alias(libs.plugins.android.library) apply false
 }
+
+/*
+dependencies {
+    classpath(libs.plugins.android.gradle.plugin.get())
+}*/
