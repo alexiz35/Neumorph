@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
+    id("maven-publish")
 }
 
 android {
@@ -9,7 +10,6 @@ android {
     defaultConfig {
         minSdk = 24
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -21,6 +21,7 @@ android {
             )*/
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -28,10 +29,29 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.appcompat)
     /*implementation(libs.material)*/
     /*testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)*/
 }
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            groupId = "com.github.aleksiz35"
+            artifactId = "neumorph"
+            version = "1.0.0"
+
+            afterEvaluate {
+                val releaseComponent = components.findByName("release")
+                if (releaseComponent != null) {
+                    from(releaseComponent)
+                } else {
+                    logger.warn("⚠️ Component 'release' не найден.")
+                }
+            }
+        }
+    }
+}
+
